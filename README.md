@@ -10,7 +10,7 @@ This app is structured and works like below:
 - Uses ***3-layer*** code structure to improve code tolerance and debugging experience
 - Global Response handler
 - Global exception handling
-- JWT based authentication and session management for pure REST.
+- JWT based (Encryption with PEM keys) authentication and session management for pure REST.
 - Generic and refined logging
 - hapi/joi request validation
 - Well-structured postman collection.
