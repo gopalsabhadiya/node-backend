@@ -1,0 +1,1630 @@
+{
+	"info": {
+		"_postman_id": "3c2731fc-8896-4245-bfb6-4af3f0ad9e97",
+		"name": "FriendsField",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Profile",
+			"item": [
+				{
+					"name": "Personal",
+					"item": [
+						{
+							"name": "Register",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "auth-token",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"fullName\": \"Gopal Sabhadiya\",\r\n    \"userName\": \"gopal.sabhadiya\",\r\n    \"nickName\": \"Gopu\",\r\n    \"emailId\": \"gopal.sabhadiya@gmail.com\",\r\n    \"longitude\": 21.221215,\r\n    \"latitude\": 72.808507,\r\n    \"areaRange\": 15,\r\n    \"gender\": \"MALE\",\r\n    \"targetAudienceAgeMin\": 18,\r\n    \"targetAudienceAgeMax\": 20,\r\n    \"facebookLink\": \"facebook.com\",\r\n    \"instagramLink\": \"instagram.comm\",\r\n    \"twitterLink\": \"twitter.com\",\r\n    \"linkedinLink\": \"linkein.com\"\r\n}"
+								},
+								"url": {
+									"raw": "{{url}}:{{port}}/{{version}}/profile/personal/register",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{version}}",
+										"profile",
+										"personal",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "auth-token",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"fullName\": \"Gopal Sabhadiyaa\"\r\n}"
+								},
+								"url": {
+									"raw": "{{url}}:{{port}}/{{version}}/profile/personal",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{version}}",
+										"profile",
+										"personal"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "auth-token",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}:{{port}}/{{version}}/profile/personal",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{version}}",
+										"profile",
+										"personal"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Fetch",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "auth-token",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}:{{port}}/{{version}}/profile/personal",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{version}}",
+										"profile",
+										"personal"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Business",
+					"item": [
+						{
+							"name": "Register",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "auth-token",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Dhandho\",\r\n    \"category\": \"Panipuri\",\r\n    \"subCategory\": \"Chatpuri\",\r\n    \"description\": \"Rajeshbhai Panipuri vala\",\r\n    \"longitude\": 21.221215,\r\n    \"latitude\": 72.808507,\r\n    \"interestedCategory\": \"Bhel\",\r\n    \"interestedSubCategory\": \"Bhelpuri\"\r\n}"
+								},
+								"url": {
+									"raw": "{{url}}:{{port}}/{{version}}/profile/business/register",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{version}}",
+										"profile",
+										"business",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "auth-token",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Dhandhao\"\r\n}"
+								},
+								"url": {
+									"raw": "{{url}}:{{port}}/{{version}}/profile/business",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{version}}",
+										"profile",
+										"business"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "auth-token",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}:{{port}}/{{version}}/profile/business",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{version}}",
+										"profile",
+										"business"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Fetch",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "auth-token",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}:{{port}}/{{version}}/profile/business",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{version}}",
+										"profile",
+										"business"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Profile",
+					"item": [
+						{
+							"name": "New Request",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "auth-token",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"Business\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}:{{port}}/{{version}}/profile",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{version}}",
+										"profile"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Registration",
+			"item": [
+				{
+					"name": "Verify OTP",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "auth-token",
+								"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJfY29udGFjdE5vIjoiMTIzNDU2Nzg5MCIsIl91c2VySWQiOiJlNDcyNWFkNS02MmMwLTRlNjYtOTYwZi02YjE5OGY2MzcwZjAiLCJfb3RwIjoiNzY4MSIsIl9uZXdVc2VyIjpmYWxzZSwiaWF0IjoxNjUwMDE0NDg4fQ.BBwM0a3KXv-JHVVvcq8UwF-f_7l9ZwT9_NK4vtUyrA-0UKpciPbTOgd51CBnabmzpIol6MY-X_d4QudH1FLk9w",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"otp\": \"1234\"\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/user/verify-otp",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"user",
+								"verify-otp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send OTP",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"contactNo\": \"1234567890\"\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/user/send-otp",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"user",
+								"send-otp"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Fetch all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\": \"Business\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/product",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch Single",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\": \"Business\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/product/single/b9783ab2-61b5-47b7-a1aa-8ed8565a825d",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"product",
+								"single",
+								"b9783ab2-61b5-47b7-a1aa-8ed8565a825d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/payment/c69169d4-2c05-4633-8679-611e944264f4",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"payment",
+								"c69169d4-2c05-4633-8679-611e944264f4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Pakodi chaat\"\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/product/b9783ab2-61b5-47b7-a1aa-8ed8565a825d",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"product",
+								"b9783ab2-61b5-47b7-a1aa-8ed8565a825d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Panipuri\",\r\n    \"price\": 250,\r\n    \"description\": \"Spicy Panipuri\",\r\n    \"offer\": \"20% off\",\r\n    \"itemCode\": \"IT2510\"\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/product",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"product"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Static",
+			"item": [
+				{
+					"name": "Subscription Plan",
+					"item": [
+						{
+							"name": "Get",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "auth-token",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}:{{port}}/{{version}}/static/sub-plan/premium",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{version}}",
+										"static",
+										"sub-plan",
+										"premium"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Payment",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"holderName\": \"Gopal Sabhadiya\",\r\n   \"number\": \"1234 1234 1234 1234\",\r\n   \"expiryInfo\": \"01/26\"\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/payment",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\": \"Business\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/payment",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"payment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Marketing Notification",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Notification\",\r\n    \"description\": \"Notification marketing try\",\r\n    \"link\": \"Dummy link\",\r\n    \"hasImage\": true,\r\n    \"users\": [\r\n        {\r\n            \"userId\": \"512815b9-f443-4551-b459-9a69d61e7b4b\"\r\n        }\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/marketing/notification",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"marketing",
+								"notification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send Notification",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Notification\",\r\n    \"description\": \"Notification marketing try\",\r\n    \"link\": \"Dummy link\",\r\n    \"hasImage\": true,\r\n    \"users\": [\r\n        {\r\n            \"userId\": \"512815b9-f443-4551-b459-9a69d61e7b4b\"\r\n        }\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/marketing/notification/1e6544a1-b24e-4cc4-90c6-d04df945c1a8",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"marketing",
+								"notification",
+								"1e6544a1-b24e-4cc4-90c6-d04df945c1a8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Notification marketing try - (Updated)\"\r\n} "
+						},
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/marketing/notification/2ff7c4c4-d6ac-48ea-aea6-e561e6a1a8dc",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"marketing",
+								"notification",
+								"2ff7c4c4-d6ac-48ea-aea6-e561e6a1a8dc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/marketing/notification/2ff7c4c4-d6ac-48ea-aea6-e561e6a1a8dc",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"marketing",
+								"notification",
+								"2ff7c4c4-d6ac-48ea-aea6-e561e6a1a8dc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Notification marketing try - (Updated)\"\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/marketing/notification",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"marketing",
+								"notification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/marketing/notification/1e6544a1-b24e-4cc4-90c6-d04df945c1a8",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"marketing",
+								"notification",
+								"1e6544a1-b24e-4cc4-90c6-d04df945c1a8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/marketing/notification/1e6544a1-b24e-4cc4-90c6-d04df945c1a8/users",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"marketing",
+								"notification",
+								"1e6544a1-b24e-4cc4-90c6-d04df945c1a8",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Marketing Email",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Notification\",\r\n    \"description\": \"Notification marketing try\",\r\n    \"link\": \"Dummy link\",\r\n    \"hasImage\": true,\r\n    \"users\": [\r\n        {\r\n            \"emailId\": \"gopal@gmail.com\"\r\n        },\r\n        {\r\n            \"emailId\": \"gopal1@gmail.com\"\r\n        }\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/marketing/email",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"marketing",
+								"email"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send Email",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Notification\",\r\n    \"description\": \"Notification marketing try\",\r\n    \"link\": \"Dummy link\",\r\n    \"hasImage\": true,\r\n    \"users\": [\r\n        {\r\n            \"userId\": \"512815b9-f443-4551-b459-9a69d61e7b4b\"\r\n        }\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/marketing/email/1e6544a1-b24e-4cc4-90c6-d04df945c1a8",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"marketing",
+								"email",
+								"1e6544a1-b24e-4cc4-90c6-d04df945c1a8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Email marketing try - (Updated)\",\r\n    \"users\": [\r\n        {\r\n            \"emailId\": \"gopal@gmail.com\"\r\n        },\r\n        {\r\n            \"emailId\": \"gopal2@gmail.com\"\r\n        }\r\n    ]\r\n} "
+						},
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/marketing/email/31570c9c-696d-4fcd-a6ff-6e20dea41cb0",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"marketing",
+								"email",
+								"31570c9c-696d-4fcd-a6ff-6e20dea41cb0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/marketing/email/efd34783-a4cc-4d90-b651-3e5b77e659b8",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"marketing",
+								"email",
+								"efd34783-a4cc-4d90-b651-3e5b77e659b8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/marketing/email",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"marketing",
+								"email"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/marketing/email/31570c9c-696d-4fcd-a6ff-6e20dea41cb0",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"marketing",
+								"email",
+								"31570c9c-696d-4fcd-a6ff-6e20dea41cb0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/marketing/email/31570c9c-696d-4fcd-a6ff-6e20dea41cb0/users",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"marketing",
+								"email",
+								"31570c9c-696d-4fcd-a6ff-6e20dea41cb0",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Marketing SMS",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"SMS\",\r\n    \"description\": \"SMS marketing try\",\r\n    \"link\": \"Dummy link\",\r\n    \"hasImage\": true,\r\n    \"users\": [\r\n        {\r\n            \"contactNo\": \"1111111111\"\r\n        },\r\n        {\r\n            \"contactNo\": \"2222222222\"\r\n        }\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/marketing/sms",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"marketing",
+								"sms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send SMS",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Notification\",\r\n    \"description\": \"Notification marketing try\",\r\n    \"link\": \"Dummy link\",\r\n    \"hasImage\": true,\r\n    \"users\": [\r\n        {\r\n            \"userId\": \"512815b9-f443-4551-b459-9a69d61e7b4b\"\r\n        }\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/marketing/sms/3ce077f5-863e-495d-a819-923a24c6c17b",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"marketing",
+								"sms",
+								"3ce077f5-863e-495d-a819-923a24c6c17b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Email marketing try - (Updated)\",\r\n    \"users\": [\r\n        {\r\n            \"contactNo\": \"1111111111\"\r\n        },\r\n        {\r\n            \"contactNo\": \"3333333333\"\r\n        }\r\n    ]\r\n} "
+						},
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/marketing/sms/3ce077f5-863e-495d-a819-923a24c6c17b",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"marketing",
+								"sms",
+								"3ce077f5-863e-495d-a819-923a24c6c17b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/marketing/sms/3ce077f5-863e-495d-a819-923a24c6c17b",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"marketing",
+								"sms",
+								"3ce077f5-863e-495d-a819-923a24c6c17b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/marketing/sms",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"marketing",
+								"sms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/marketing/sms/3ce077f5-863e-495d-a819-923a24c6c17b",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"marketing",
+								"sms",
+								"3ce077f5-863e-495d-a819-923a24c6c17b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/marketing/sms/3ce077f5-863e-495d-a819-923a24c6c17b/users",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"marketing",
+								"sms",
+								"3ce077f5-863e-495d-a819-923a24c6c17b",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Friend Request",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"receiverId\": \"b3081a9e-31e8-4c32-af0a-db884d466cab\",\r\n    \"status\": \"SENT\"\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/user/friend-request",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"user",
+								"friend-request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"receiverId\": \"b3081a9e-31e8-4c32-af0a-db884d466cab\",\r\n        \"status\": \"FRIENDS\"\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/user/friend-request/25b784d1-ef27-42f0-a10f-7f7894a9ea5b",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"user",
+								"friend-request",
+								"25b784d1-ef27-42f0-a10f-7f7894a9ea5b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Socket",
+			"item": []
+		},
+		{
+			"name": "Story",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"startTime\": \"2022-04-22T10:40:25.350Z\",\r\n    \"endTime\": \"2022-04-23T10:40:25.350Z\",\r\n    \"type\": \"PHOTO\"\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/story",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"story"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Increase Story View",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "auth-token",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{url}}:{{port}}/{{version}}/story/increase-view-count/4337cb49-c623-4cc2-a273-ffce903b03fd",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{version}}",
+								"story",
+								"increase-view-count",
+								"4337cb49-c623-4cc2-a273-ffce903b03fd"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Test Backend",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "auth-token",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"testString\": \"1234567890123456789012345678901234567890123456789\"\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}:{{port}}/{{version}}/test",
+					"host": [
+						"{{url}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"{{version}}",
+						"test"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
